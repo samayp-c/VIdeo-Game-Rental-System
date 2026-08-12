@@ -1,0 +1,51 @@
+ID,Platform,Genre,Title,Purchase Price £,Purchase Date
+1,Playstation,Action,COD,50,01/08/2019
+2,Xbox,Sports,FIFA,20,01/08/2019
+3,PlayStation,Action,COD,50,01/09/2019
+4,Playstation,Sports,PES,10,01/09/2019
+5,Playstation,Action,COD,50,01/09/19
+6,Playstation,Action,OVERWATCH,35,01/09/2019
+7,Xbox,Adventure,UNCHARTED,40,01/09/2019
+8,Xbox,Action,OVERWATCH,35,03/09/2019
+9,Playstation,Adventure,UNCHATRED,40,01/12/2019
+10,Playstation,Sports,PES,10,01/12/2019
+11,Playstation,Action,DISHONORED,40,01/11/2019
+12,Playstation,Action,DISHONORED,40,30/11/2019
+13,Playstation,Adventure,GTAV,60,01/11/2019
+14,Playstation,Adventure,GTAV,60,01/11/2019
+15,Playstation,Adventure,GTAV,60,01/11/2019
+16,Playstation,Action,SEKIRO,65,01/11/2019
+17,Playstation,Action,SEKIRO,65,01/11/2019
+18,Playstation,Action,DARKSOULS,70,01/11/2019
+19,Playstation,Action,DARKSOULS,70,01/11/2019
+20,Xbox,Puzzle,TETRIS,5,01/11/2019
+21,Playstation,Racing,NEED FOR SPEED,55,15/10/2022
+22,Xbox,Action,HALO,45,20/10/2022
+23,Playstation,Role-Playing,SKYRIM,60,01/01/2019
+24,Xbox,Strategy,AGE OF EMPIRES,50,05/01/2019
+25,Playstation,Action,GOD OF WAR,70,15/01/2019
+26,Playstation,Fighting,TEKKEN,40,20/02/2019
+27,Xbox,Adventure,FORZA HORIZON,60,01/03/2019
+28,Playstation,Horror,RESIDENT EVIL,55,10/03/2019
+29,Xbox,Shooter,GEARS OF WAR,50,01/04/2019
+30,Playstation,Sports,MLB THE SHOW,30,15/04/2019
+31,Playstation,Platformer,SPIDER-MAN,60,01/05/2019
+32,Xbox,Simulation,THE SIMS,40,15/05/2019
+33,Playstation,Action,ASSASSIN'S CREED,65,20/05/2019
+34,Xbox,Action,BATTLEFIELD,50,01/06/2019
+35,Playstation,RPG,THE WITCHER,60,10/06/2019
+36,Xbox,Action,FORTNITE,0,15/06/2019
+37,Playstation,Action,GHOST OF TSUSHIMA,70,20/06/2019
+38,Xbox,Sports,NBA 2K,30,01/07/2019
+39,Playstation,Shooter,CYBERPUNK 2077,70,15/07/2019
+40,Xbox,Action,DOOM,60,20/07/2019
+41,Playstation,Adventure,DEATH STRANDING,65,01/08/2019
+42,Xbox,Shooter,FALLOUT,50,10/08/2019
+43,Playstation,Strategy,CIVILIZATION,45,20/08/2019
+44,Xbox,Racing,FORZA MOTORSPORT,55,01/09/2019
+45,Playstation,Horror,THE LAST OF US,70,10/09/2019
+46,Xbox,Fighting,MORTAL KOMBAT,50,20/09/2019
+47,Playstation,Adventure,HORIZON ZERO DAWN,60,01/10/2019
+48,Xbox,Shooter,BORDERLANDS,40,15/10/2019
+49,Playstation,Platformer,RATCHET & CLANK,55,20/10/2019
+50,Xbox,Simulation,MINECRAFT,25,01/11/2019
