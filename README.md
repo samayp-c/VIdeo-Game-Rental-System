@@ -1,33 +1,46 @@
-Student ID: F329597 Date Completed: Augsut-September 2024
+# Video Game Rental Management System
 
-Setup:
-1) Download the zipped file named "F329597_Project"
-2) Unzip and extract the folder in a location of your choosing
-3) Once the folder is extracted open the command prompt and navigate to the         installation directory and then enter "jupyter notebook"
-   This should launch notebook in a browser, then locate the "F329597_Project" folder
-4) From that folder open "menu.ipynb" in jupyter notebook.
-(Folder contains package called "scripts" which contains all the python 
-modules created by me including an __init__.py file.)
+A Python-based video game rental system with a Jupyter notebook interface, database-backed rental/return workflows, and a weighted recommendation algorithm with data visualisations. Built as a university coursework project (grade: 93%).
 
+## Features
 
-Special Information/Instructions:
-All test cases are included at the end of each module code including console only and GUI only test cases as well as cases which can be used in either console or GUI. (database.py file has no test cases, some testing functionality is included)
-E.g gameRent File first test case:
-#Test cases: customer_id,game_id (reason)
-#Test case 1: "",_  (Checking empty customer inputs)
+- **Rent, return, and search games**, with input validation and empty-input handling
+- **Subscription management** for customers
+- **Weighted recommendation algorithm** - the standout feature. Users assign their own weightings to *popularity* and *price* depending on what matters most to them; the algorithm combines these into a single score per game to recommend the best purchases. For example, on a tight budget a user weights price more heavily, so cheaper games are favoured over merely popular ones.
+- **Data visualisations** (matplotlib) - the recommendation results and additional analysis charts are rendered inline
+- **Tab-based GUI** in the notebook, designed for simple, effective human-computer interaction
+- **Modular design** - logic is separated into a `scripts` package (`database`, `gameRent`, `gameReturn`, `gameSearch`, `gameSelect`, `subscriptionManager`) with an `__init__.py`
+- **Built-in test cases** at the end of each module (console-only, GUI-only, and shared), covering every function apart from direct database-editing functions, which are verified by console input and inspecting the database files afterwards
 
-Testing functionality for every function is included in the modules apart from functions which edit the database, those functions are tested by console inputs in each module and checking the database files after to see if those functions function correctly (All have been tested and work).
+## Tech stack
 
-Task 1.6 gameSelect.py, a blank input for time period refers to all time. If budget 
-is too low for any of the top 3 games retrieved from my algorithm then no game will be recommended for purchase and no visualisation will be done. E.g if budget entered is £10 and top 3 games all cost £15 then no recommendations will be made.  The two analysis charts (in the black box) are not based on any input parameters.
-Recommended to do minimum £100 budget to gurantee a result everytime. (Smallest budget that can work is £5 but depends on your weightings) 
+- **Language:** Python
+- **Interface:** Jupyter Notebook (`menu.ipynb`)
+- **Visualisation:** matplotlib
+- **Data:** flat-file storage (`.txt` data files)
 
-Initially I wanted to keep all the data files in the data subfolder however due to being unable to change the path location in the subscriptionManager.pyc compiled file I had to keep subscription_info.txt seperate and place it in the root directory so that the compiled file was able to locate it correctly. If I was to improve the readability and tidy up the data I would keep all the data files in one folder and edit the subscriptionManager file so that it extended its path to be able to access the text file.
+## How to run
 
+1. Clone the repository:
+   ```
+   git clone https://github.com/samayp-c/video-game-rental-system.git
+   ```
+2. Install the one external dependency:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Launch Jupyter from the project folder:
+   ```
+   jupyter notebook
+   ```
+4. In the browser tab that opens, open **`menu.ipynb`** and run the cells.
 
-Proud of:
-gameSelect.py: My algorithm which takes weightings for both popularity and price based on what the user thinks is more important to them. It uses that to create
-a combined score for each game allowing significant improvement in future game purchase recommendations. E.g if they have a low budget then you would input a higher price weighting meaning how expensive a game is, is more important than how popular a game is. Also proud of my visualisation charts for various factors.
-I am also proud of the GUI tab layout and the simple but effective HCI.
+**Tip:** the recommendation feature only suggests a game if it fits the entered budget. A blank time-period input means "all time". A budget of around £100+ guarantees a recommendation every time; the minimum workable budget depends on the weightings chosen.
 
-At time of submission no errors were found, should be error free for every module.
+## What I'm proud of
+
+The weighted popularity/price recommendation algorithm, which lets users express their own priorities and produces genuinely tailored purchase recommendations, and the accompanying visualisation charts. I'm also pleased with the tabbed GUI layout and its clean, effective HCI.
+
+## What I'd improve now
+
+At submission, all data files couldn't be kept in a single `data` subfolder because the compiled `subscriptionManager` module had a fixed path to `subscription_info.txt`, forcing that file to sit in the root directory. Given more time I'd refactor `subscriptionManager` to resolve its path dynamically so all data files could live tidily in one folder. More broadly, I'd replace the flat-file storage with a proper database and formalise the ad-hoc module tests into a unit-testing framework.
